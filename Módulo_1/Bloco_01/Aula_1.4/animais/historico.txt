@@ -1,0 +1,8 @@
+  548  sort mamiferos.txt
+  549  sort -3 mamiferos.txt 
+  550  history | tail -8
+  551  history | tail -8 > historico.txt
+  552  cat historico.txt 
+  553  ls
+  554  rm historico.txt
+  555  history | tail -8 | cat > historico.txt

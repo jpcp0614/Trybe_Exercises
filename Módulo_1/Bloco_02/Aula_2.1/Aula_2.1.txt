@@ -1,0 +1,160 @@
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ touch comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	comidas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git add comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   comidas.txt
+
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git commit -m "adiciona o arquivo comida.txt"
+[master (root-commit) c0b696e] adiciona o arquivo comida.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ 
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat > comidas.txt
+Pizza
+Chocolate
+Lasanha
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat comidas.txt 
+Pizza
+Chocolate
+Lasanha
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   comidas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git add comidas.txt 
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   comidas.txt
+
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git commit -m "Adiciona algumas comidas no arquivo comidas.txt"
+[master 5b45efa] Adiciona algumas comidas no arquivo comidas.txt
+ 1 file changed, 3 insertions(+)
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git log
+commit 5b45efa0c78054744885dfb687c1ff50ffaf90fc (HEAD -> master)
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Fri Jul 16 17:44:13 2021 -0300
+
+    Adiciona algumas comidas no arquivo comidas.txt
+
+commit c0b696ee4921ae5635027624340490f05c869e4c
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Fri Jul 16 17:38:17 2021 -0300
+
+    adiciona o arquivo comida.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch jp1
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch jp2
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch
+  jp1
+  jp2
+* master
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git checkout jp1
+Switched to branch 'jp1'
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat > comidas_ruins.txt
+Jiló
+Berinjela
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git add comidas_ruins.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git commit -m "Adiciona o arquivo comidas_ruins.txt"
+[jp1 475d54d] Adiciona o arquivo comidas_ruins.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 comidas_ruins.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch jp1
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ gir branch
+Command 'gir' not found, did you mean:
+  command 'git' from deb git (1:2.30.2-1ubuntu1)
+  command 'gid' from deb id-utils (4.6.28-20200521ss15dab)
+  command 'gpr' from deb gpr (0.15deb-2build1)
+  command 'dir' from deb coreutils (8.32-4ubuntu2)
+  command 'gio' from deb libglib2.0-bin (2.68.1-1~ubuntu21.04.1)
+  command 'gip' from deb gip (1.7.0-1-5)
+  command 'gie' from deb proj-bin (7.2.1-1)
+Try: sudo apt install <deb name>
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch
+* jp1
+  jp2
+  master
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ ls
+comidas_ruins.txt  comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git checkout jp2
+Switched to branch 'jp2'
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat > comidas_ruins2.txt
+Buchada
+Rabada
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git add comidas_ruins2.txt 
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git commit -m "Adiciona o arquivo comidas_ruins2.txt"
+[jp2 39c8fa5] Adiciona o arquivo comidas_ruins2.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 comidas_ruins2.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch jp2
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git checkout master
+Switched to branch 'master'
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ ls
+comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git merge jp1
+Updating 5b45efa..475d54d
+Fast-forward
+ comidas_ruins.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 comidas_ruins.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ ls
+comidas_ruins.txt  comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git merge jp2
+Merge made by the 'recursive' strategy.
+ comidas_ruins2.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 comidas_ruins2.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ ls
+comidas_ruins2.txt  comidas_ruins.txt  comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch -d
+fatal: branch name required
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch -d jp1
+Deleted branch jp1 (was 475d54d).
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git branch -d jp2
+Deleted branch jp2 (was 39c8fa5).
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ git status
+On branch master
+nothing to commit, working tree clean
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ ls
+comidas_ruins2.txt  comidas_ruins.txt  comidas.txt
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat comidas_ruins.txt
+Jiló
+Berinjela
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ cat comidas_ruins2.txt
+Buchada
+Rabada
+jp@Ubuntu-JP:~/Documents/Trybe/Módulo_1/Aula_2.1$ 
+
