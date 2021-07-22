@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Rede de Dados
+Firewall
+Bluetoth
+Anti-vírus
+Navegador

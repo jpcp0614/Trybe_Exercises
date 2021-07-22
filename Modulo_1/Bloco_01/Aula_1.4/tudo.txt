@@ -1,0 +1,13 @@
+amarelo
+vermelho
+azul
+verde
+preto
+alaranjado
+cinza
+branco
+abacaxi
+morango
+laranja
+banana
+kiwi
