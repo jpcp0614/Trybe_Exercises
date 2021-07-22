@@ -1,4 +1,0 @@
-Unix
-Bash
-Shell
-Zsh
