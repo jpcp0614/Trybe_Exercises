@@ -1,0 +1,173 @@
+Aula_2.2 $ touch pizzas.txt
+Aula_2.2 $ code .
+Aula_2.2 $ touch Bebidas.txt
+Aula_2.2 $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aula_2.2 $ git log
+commit d1f539d265d6ea50d5cef61bdbd10d54f5e5fa7e (HEAD -> master)
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:45:45 2021 -0300
+
+    Unix & Bash
+
+commit e65b13217b0a384c2c6b2ca187e0fd05493f968c
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:41:23 2021 -0300
+
+    Git & GitHub - O que é e para que serve
+
+commit 7b6499b06f36d05960ff9ca5f10aa7a55c9784db
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:39:59 2021 -0300
+
+    Unix & Bash - Parte 2
+
+commit 9751801489b3b2f3dbc11e0304251980df439588
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:39:05 2021 -0300
+
+    Unix & Bash - Parte 1
+
+commit 2720bbe324d5f95b69902ea51fb0073c75afc85d
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:37:48 2021 -0300
+Aula_2.2 $ 
+Aula_2.2 $ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Bebidas.txt
+	pizzas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Aula_2.2 $ git add Bebidas.txt pizzas.txt
+Aula_2.2 $ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Bebidas.txt
+	new file:   pizzas.txt
+
+Aula_2.2 $ git commit -m "Adiciona pizzas e Bebidas"
+[master b917421] Adiciona pizzas e Bebidas
+ 2 files changed, 2 insertions(+)
+ create mode 100644 "M\303\263dulo_1/Bloco_02/Aula_2.2/Bebidas.txt"
+ create mode 100644 "M\303\263dulo_1/Bloco_02/Aula_2.2/pizzas.txt"
+Aula_2.2 $ git status
+On branch master
+nothing to commit, working tree clean
+Aula_2.2 $ 
+
+
+
+Aula_2.2 $ git log
+commit b91742169aa0ec2eba76ce5a90dc76106c5eb462 (HEAD -> master)
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 12:30:31 2021 -0300
+
+    Adiciona pizzas e Bebidas
+
+commit d1f539d265d6ea50d5cef61bdbd10d54f5e5fa7e
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:45:45 2021 -0300
+
+    Unix & Bash
+
+commit e65b13217b0a384c2c6b2ca187e0fd05493f968c
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:41:23 2021 -0300
+
+    Git & GitHub - O que é e para que serve
+
+commit 7b6499b06f36d05960ff9ca5f10aa7a55c9784db
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:39:59 2021 -0300
+
+    Unix & Bash - Parte 2
+
+commit 9751801489b3b2f3dbc11e0304251980df439588
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:39:05 2021 -0300
+Aula_2.2 $ 
+Aula_2.2 $ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Bebidas.txt
+	modified:   pizzas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Aula_2.2 $ git add .
+Aula_2.2 $ git commit -m "Adiciona novos sabores de pizza e bebidas"
+[master ad80f59] Adiciona novos sabores de pizza e bebidas
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+Aula_2.2 $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aula_2.2 $ git status
+On branch master
+nothing to commit, working tree clean
+Aula_2.2 $ git log
+commit ad80f590193fc4389038d85a061fc3f0c046b36e (HEAD -> master)
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 12:35:30 2021 -0300
+
+    Adiciona novos sabores de pizza e bebidas
+
+commit b91742169aa0ec2eba76ce5a90dc76106c5eb462
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 12:30:31 2021 -0300
+
+    Adiciona pizzas e Bebidas
+
+commit d1f539d265d6ea50d5cef61bdbd10d54f5e5fa7e
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:45:45 2021 -0300
+
+    Unix & Bash
+
+commit e65b13217b0a384c2c6b2ca187e0fd05493f968c
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:41:23 2021 -0300
+
+    Git & GitHub - O que é e para que serve
+
+commit 7b6499b06f36d05960ff9ca5f10aa7a55c9784db
+Author: jpcp0614 <jpcp0614@gmail.com>
+Date:   Mon Jul 19 11:39:59 2021 -0300
