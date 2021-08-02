@@ -1,0 +1,55 @@
+1.  Pensar no que vou vestir
+2.  Abrir a porta do guarda-roupa
+3.  Puxar o calceiro
+4.  Retirar uma calça
+5.  Colocar a calça em cima da cama
+6.  Pegar o cabide
+7.  Retirar a camisa
+8.  Conferir se tudo está passado
+9.  Ir passar a camisa e a calça
+10. Ir até a área de serviço
+11. Pegar a baca de passar
+12. Abrir a banca de passar
+11. Ir até o armário
+12. Abrir a porta
+13. Retirar o ferro de passar
+14. Colocar em cima da banca
+15. Pegar a camisa
+16. Colocar em cima da banca
+17. Passar a camisa
+18. Pendurar a camisa no cabide
+19. Pegar a calça
+20. Passar a calça
+21. Pendurar a calça no cabide próprio
+22. Levar a roupa para o quarto
+23. Pegar a cueca
+24. Ir até o banheiro
+25. Pendurar a cueca
+26. Voltar e fechar a banca
+27. Guardar a banca
+28. Pegar a toalha de banho
+29. Ir para o banheiro
+30. Pendurar a toalha de banho
+31. Abrir a porta do blindex
+32. Abrir o registro
+33. Testar a temperatura da água
+34. Molhar o corpo
+35. Fechar o registro
+36. Pegar o sabonete
+37. Ensaboar
+38. Colocar o sabonete de volta no lugar
+39. Pegar a bucha
+40. Esfregar
+41. Abrir o registro
+42. Lavar a bucha
+43. Enxaguar o corpo
+44. Fechar o registro
+45. Pendurar a bucha
+46. Pegar o frasco de shampoo
+47. Apertar o frasco
+48. Colocar um pouco na mão
+49. Guardar o shampoo no lugar
+50. Passar o shampoo nos cabelos
+51. Abrir o registro
+43. Enxaguar
+etc...
