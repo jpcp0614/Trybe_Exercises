@@ -26,9 +26,17 @@ addNewKey(lesson2, 'turno', 'manhã');
 console.log(lesson2);
 
 
-// * 2
+// * 2)
 // * Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 const arrayKeys = obj => Object.keys(obj);
 console.log(arrayKeys(lesson1));
 
 
+// * 3)
+// * Crie uma função para mostrar o tamanho de um objeto.
+const arraySize = (obj) => Object.keys(obj).length;
+console.log(arraySize(lesson3));
+
+
+// * 4)
+// * 
