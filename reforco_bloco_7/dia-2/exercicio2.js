@@ -34,9 +34,13 @@ console.log(arrayKeys(lesson1));
 
 // * 3)
 // * Crie uma função para mostrar o tamanho de um objeto.
-const arraySize = (obj) => Object.keys(obj).length;
+const arraySize = obj => Object.keys(obj).length;
 console.log(arraySize(lesson3));
 
 
 // * 4)
-// * 
+// * Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const arrayValues = obj => Object.values(obj);
+console.log(arrayValues(lesson1));
+
+
