@@ -50,5 +50,22 @@ console.log(warriorDamage(warrior));
 * caso o mago tenha menos de 15 de mana o valor de dano recebe uma
 * mensagem (Ex: "Não possui mana suficiente") e a mana gasta é 0.
 */
-const mageDamage = (mageDmg) => {};
+const mageDamage = (mageDmg) => {
+  const dmgMin = mage.intelligence;
+  const dmgMax = dmgMin * 2;
+  const mageMana = mage.mana;
+  const round = {
+    damageRound: 'Não possui mana suficiente',
+    manaRound: 0
+  };
+  
+  if (mageMana > 15) {
+    const damage = Math.floor(Math.random() * (dmgMax - dmgMin)) + dmgMin;
+    round.manaRound = 15;
+    round.damageRound = damage;
+    return round;
+  };
+  return round;
+};
+console.log(mageDamage(mage));
 
