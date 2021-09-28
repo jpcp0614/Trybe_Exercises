@@ -111,8 +111,11 @@ const gameActions = {
     mage.healthPoints -= dragonDmg;
     warrior.healthPoints -= dragonDmg;
     dragon.damage = dragonDmg;
-  }
+  },
+  battleResults: () => battleMembers
 };
+
 gameActions.damageDealtByWarrior(warriorAttack);
 gameActions.damageDealtByMage(mageAttack);
 gameActions.damageDealtByDragon(dragonAttack);
+console.log(gameActions.battleResults())
