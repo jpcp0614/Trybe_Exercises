@@ -5,16 +5,24 @@ const students = [
   { name: 'Ana', grade: 81, approved: '' },
 ];
 
-const verifyGrades = () => {
-  for (let i = 0; i < students.length; i =+ 1) {
-    const student = students[i];
-    if (student.grade >= 60) {
-      student.approved = 'Aprovado';
-    } else {
-      student.approved = 'Recuperação';
-    };
-  };
+// sem forEach
+// const verifyGrades = () => {
+//   for (let i = 0; i < students.length; i += 1) {
+//     const student = students[i];
+//     if (student.grade >= 60) {
+//       student.approved = 'Aprovado';
+//     } else {
+//       student.approved = 'Recuperação';
+//     };
+//   };
+// };
+
+// com forEach
+const verifyGrades = (array) => {
+  array.forEach((student, index) => 
+    (student.grade >= 60) ? students[index].approved = 'Aprovado' : students[index].approved = 'Recuperação');
+  return array;
 };
 
-verifyGrades();
-console.log(students);
+console.log(verifyGrades(students));
+
