@@ -13,3 +13,5 @@ function flatten() {
 console.log(flatten());
 
 assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);
+
+// ref.: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
