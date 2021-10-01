@@ -1,5 +1,5 @@
 const assert = require('assert');
-const createStudent = require('../src/createStudent');
+const createStudent = require('../src/creatStudent');
 
 /*
   Dada uma função chamada createStudent que recebe como parâmetro um nome, retorne um objeto que contenha duas chaves:
